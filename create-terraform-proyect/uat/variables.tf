@@ -9,3 +9,15 @@ variable "FOLDER_ID" {
   description = "Folder = Client"
 }
 
+variable "BILLING_ACCOUNT"{
+  type = string
+}
+
+variable "SERVICES_API" {
+  type = list
+  default = [
+    "cloudbuild.googleapis.com",
+    "artifacregistry.googleapis.com",
+    "cloudrun.googleapis.com"
+    ]
+}
