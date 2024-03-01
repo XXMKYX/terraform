@@ -16,7 +16,7 @@ variable "toppings" {
 
 locals {
   my_taco = {
-      protein = var.protein
+      protein = "${var.protein} +"
       cheese = var.cheese
       toppings = var.toppings
   }
